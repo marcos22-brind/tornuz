@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torus: Navegador + IA</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white p-4">
+  <h1 class="text-3xl font-bold mb-4">🌐 Torus: Navegador com IA</h1>
+
+  <input id="userEmail" placeholder="Digite seu email..." class="mb-4 p-2 w-full text-black" />
+  
+  <textarea id="userPrompt" rows="4" placeholder="Digite sua pergunta..." class="p-2 w-full text-black mb-2"></textarea>
+  <button onclick="enviarPergunta()" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">Perguntar à IA</button>
+
+  <div id="resposta" class="mt-4 bg-gray-800 p-3 rounded"></div>
+
+  <h2 class="text-2xl font-bold mt-6 mb-2">🎥 Vídeo (Piped)</h2>
+  <iframe class="w-full h-64" src="https://piped.video/embed/YOUTUBE_ID_AQUI" frameborder="0" allowfullscreen></iframe>
+
+  <h2 class="text-2xl font-bold mt-6 mb-2">💬 Comentários</h2>
+  <textarea id="comentario" rows="2" class="w-full text-black p-2 mb-2" placeholder="Deixe um comentário..."></textarea>
+  <button onclick="postarComentario()" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded">Comentar</button>
+  <ul id="listaComentarios" class="mt-4 space-y-2"></ul>
+</body>
+</html>
